@@ -7,6 +7,5 @@
 - non-relational database stores a mapping of keys to five different types of values
 - two different ways of persistence
   - a point-in-time dump either when certain conditions are met
-  - The other method uses an append-only file that writes every command that alters data
-in Redis to disk as it happens. 
+  - The other method uses an append-only file that writes every command that alters data in Redis to disk as it happens. 
 - Redis supports master/slave replication where slaves connect to the master and receive an initial copy of the full database. As writes are performed on the master, they’re sent to all connected slaves for updating the slave datasets in real time. With continuously updated data on the slaves, clients can then connect to any slave for reads instead of making requests to the master.
